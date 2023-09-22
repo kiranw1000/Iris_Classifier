@@ -1,13 +1,16 @@
 from csv import *
+from pathlib import Path
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
+filepath = lambda file: Path(__file__).parent / file
+
 def loaddata():
     #Process csv
-    file1 = open('/Users/kiran/Desktop/1ACode/Practice/Iris_Classifier/iris0.csv',newline='')
-    file2 = open('/Users/kiran/Desktop/1ACode/Practice/Iris_Classifier/iris1.csv',newline='')
-    file3 = open('/Users/kiran/Desktop/1ACode/Practice/Iris_Classifier/iris2.csv',newline='')
+    file1 = open(filepath('iris0.csv'),newline='')
+    file2 = open(filepath('iris1.csv'),newline='')
+    file3 = open(filepath('iris2.csv'),newline='')
     iris1 = reader(file1, delimiter=',',)
     iris2 = reader(file2, delimiter=',',)
     iris3 = reader(file3, delimiter=',',)
