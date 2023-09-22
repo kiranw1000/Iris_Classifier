@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 
 def loaddata():
     #Process csv
-    file1 = open('/Users/kiran/Desktop/1ACode/Practice/Iris_Classifier/iris0.csv',newline='')
-    file2 = open('/Users/kiran/Desktop/1ACode/Practice/Iris_Classifier/iris1.csv',newline='')
-    file3 = open('/Users/kiran/Desktop/1ACode/Practice/Iris_Classifier/iris2.csv',newline='')
+    file1 = open('iris0.csv',newline='')
+    file2 = open('iris1.csv',newline='')
+    file3 = open('iris2.csv',newline='')
     iris1 = reader(file1, delimiter=',',)
     iris2 = reader(file2, delimiter=',',)
     iris3 = reader(file3, delimiter=',',)
